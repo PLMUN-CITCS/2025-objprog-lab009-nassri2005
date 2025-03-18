@@ -2,6 +2,7 @@ public class SwitchStatementDemo {
     public static void main(String[] args) {
 
         int dayOfWeek = 4;
+        char studentGrade = 'B';
 
         switch (dayOfWeek) {
             case 1:
@@ -29,6 +30,27 @@ public class SwitchStatementDemo {
                 System.out.println("Invalid day.");
         }
 
+                switch (studentGrade) {
+                    case 'A':
+                        System.out.println("Excellent!");
+                        break;
+                    case 'B':
+                        System.out.println("Good job!");
+                        break;
+                    case 'C':
+                        System.out.println("Well done!");
+                        break;
+                    case 'D':
+                        System.out.println("You passed.");
+                        break;
+                    case 'F':
+                        System.out.println("Better luck next time.");
+                        break;
+                    default:
+                        System.out.println("Invalid grade.");
+                }
+
+        }
+
 
     }
-}
